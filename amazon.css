@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+}
+
+.main-navbar {
+    background-color: rgb(24, 20, 20);
+    display: flex;
+    max-height: 5%;
+}
+
+
+.logobar {
+    max-width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    margin: 1em 1em 0 0.5em;
+    padding: 0.5em 0;
+    width: 7.5em;
+    height: 2.2em;
+}
+
+.address {
+    font-size: 0.9em;
+    border: none;
+    color: white;
+    background: none;
+    text-align: left;
+}
+
+.location {
+    display: flex;
+    width: 15px;
+    color: white;
+}
+
+.searchbar {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    letter-spacing: 0.5px;
+    width: 4.5em;
+    padding: 14.5px 10px;
+    color: rgb(110, 108, 108);
+    background-color: rgb(238, 232, 232);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border: 0.2px solid black;
+    border-right: none;
+}
+
+input {
+    height: 44px;
+    width: 80%;
+    border: none;
+    border: 0.2px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.searchbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(39, 100%, 50%, 0.9);
+    padding: 1.08em 1.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-left: none;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+.country {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tools {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.country select {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.country-img {
+    display: inline;
+    align-self: center;
+    width: 25px;
+    height: 25px;
+}
+
+.sign-in {
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    letter-spacing: 0.2px;
+}
+
+
+.tools {
+    max-width: 25%;
+}
+
+.sign-in svg {
+    align-self: flex-end;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+}
+
+.sign-inbut {
+    display: none;
+}
+
+.return-order {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.cart {
+    display: flex;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.cart svg {
+    height: 35px;
+    width: 35px;
+    align-self: center;
+}
+
+.cart span {
+    position: relative;
+    top: 21px;
+    left: -23.5px;
+    font-size: 1.4em;
+}
+
+.cart h3 {
+    position: relative;
+    left: -10px;
+    top: 8px;
+}
+
+
+
+.top-nav {
+    background: rgba(4, 2, 25, 0.874);
+    display: flex;
+    height: 2.5em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-nav svg {
+    position: relative;
+    top: 3px;
+}
+
+.cat-op {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+.cat-op:nth-child(1) {
+    margin-left: 1.5%;
+}
+
+.bgimage {
+    background: url("assets/hero_image.jpg");
+    background-size: cover;
+    height: 400px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bgimage p {
+    background: white;
+    width: 95%;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.container-fluid {
+    display: grid;
+    margin: 2% 7%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+}
+
+.box {
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .tools {
+        display: none;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+
+    .sign-inbut {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .address,
+    .location {
+        display: none;
+    }
+
+    .searchbar {
+        width: 95%;
+    }
+
+    .return-order {
+        display: none;
+    }
+
+    .tools {
+        width: 30%;
+    }
+
+    .sign-in {
+        display: none;
+    }
+
+    .sign-inbut {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 100%;
+        width: 25%;
+        background-color: rgb(212, 141, 8);
+    }
+
+    .cart {
+        justify-self: flex-end;
+    }
+}
