@@ -1,87 +1,64 @@
-html {
-    font-family: "Spline Sans Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-}
 
-body {
-    background-color: rgb(229, 229, 229);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+    }
 
-img {
-    height: 10em;
-    position: relative;
-    left: -10em;
-}
+    .container {
+        width: 400px;
+        margin: 100px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.container {
-    height: 500px;
-    width: 500px;
-    background-image: url("https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg");
-    background-size: cover;
-    border-radius: 1em;
-    
-    margin-right: 10%;
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-}
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
-h1{
-    text-align: center;
-    padding: 1em;
-    letter-spacing: 0.5em; 
-}
+    input[type="submit"] {
+        background-color: #FF9900;
+        color: #fff;
+        cursor: pointer;
+    }
 
-.input {
-    height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: space-around;
-}
+    input[type="submit"]:hover {
+        background-color: #FF6600;
+    }
 
-input[type="text"], input[type="password"]  {
-    font-size: 1em;
-    margin-top: 20px;
-    padding: 15px 20px 15px 5px;
-    min-width: 27em;
-    border-radius: 0.5em;
-    border: 2px solid rgb(102, 102, 102);
-}
+    .signup {
+        text-align: center;
+    }
 
-.check {
-    margin: 10px;
-    padding: 0.5em 2.5em;
-    width: 50%;
+    .signup a {
+        color: #0066C0;
+        text-decoration: none;
+    }
 
-}
+    .signup a:hover {
+        text-decoration: underline;
+    }
 
-.forpass {
-    position: relative;
-    left: 320px;
-    top: -37px;
-}
+    .logo {
+        text-align: center;
+    }
 
-button{
-    margin-left: 9.5em;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 20px;
-    color: rgb(94, 100, 222);
-    border-color: rgb(94, 100, 222);
-
-    transition: transform 1s, box-shadow 1s;
-}
-
-button:hover {
-    transform:translateY(-3px);
-    box-shadow: 0.1em 0.1em 0.5em 0.1em rgb(94, 100, 222);
-}
+    .logo img {
+        width: 150px; /* Adjust size as needed */
+        height: auto;
+    }
