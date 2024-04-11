@@ -9,21 +9,22 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-                alt="Amazon Logo">
-        </div>
-        <h2>Sign-In</h2>
-        <form>
-            <input type="text" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Sign-In">
-        </form>
-        <div class="signup">
-            <p>New to Amazon? <a href="#">Create your Amazon account</a></p>
-        </div>
+<div class="container">
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="Amazon Logo">
     </div>
+    <h2>Sign-In</h2>
+    <form id="login-form">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div class="signup">
+        <p>New to Amazon? <a id="signup-link" href="#">Create your Amazon account</a></p>
+    </div>
+    <div id="message"></div>
+    <script src="script.js"></script>
+</div>
 </body>
 
 </html>
