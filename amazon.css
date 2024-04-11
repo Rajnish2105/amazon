@@ -65,8 +65,7 @@ header {
 
 .categories {
     letter-spacing: 0.5px;
-    width: 4.5em;
-    padding: 14.5px 10px;
+    padding: 14px 10px;
     color: rgb(110, 108, 108);
     background-color: rgb(238, 232, 232);
     border-top-left-radius: 0.5em;
@@ -113,6 +112,7 @@ input {
     width: 25%;
     display: flex;
     justify-content: space-evenly;
+    max-width: 25%;
 }
 
 .country select {
@@ -130,7 +130,7 @@ input {
 }
 
 .sign-in {
-    width: 32%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     color: white;
@@ -139,13 +139,10 @@ input {
     letter-spacing: 0.2px;
 }
 
-
-.tools {
-    max-width: 25%;
-}
-
 .sign-in svg {
     align-self: flex-end;
+    margin-bottom: 3px;
+    margin-left: 2px;
     width: 10px;
     height: 10px;
     opacity: 0.8;
@@ -175,8 +172,8 @@ input {
 
 .cart span {
     position: relative;
-    top: 21px;
-    left: -23.5px;
+    top: 20px;
+    left: -25px;
     font-size: 1.4em;
 }
 
@@ -187,21 +184,23 @@ input {
 }
 
 
-
 .top-nav {
     background: rgba(4, 2, 25, 0.874);
     display: flex;
     height: 2.5em;
     justify-content: flex-start;
-    align-items: center;
 }
 
-.top-nav svg {
+.cat-op svg {
+    display: inline;
+    height: 30px;
+    width: 30px;
     position: relative;
-    top: 3px;
+    top: 9px;
 }
 
 .cat-op {
+    align-content: center;
     color: white;
     font-weight: 700;
     font-size: 1.1em;
@@ -210,6 +209,7 @@ input {
 
 .cat-op:nth-child(1) {
     margin-left: 1.5%;
+    padding-bottom: 1%;
 }
 
 .bgimage {
